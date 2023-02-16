@@ -22,9 +22,9 @@
     @foreach ( $user->products as $product )
     <div class="col-3 mx-2 mx-auto w-50">
         @if ($product->image)
-            <a href="{{ route('product.edit', $product->id) }}"><img src="{{ asset('/storage/images/' . $product->image) }}" alt="{{ $product->image }}" class="" style="width: 200px; height: 300px; float:left;">
+            <a href="{{ route('product.edit', $product->id) }}"><img src="{{ asset('/storage/images/' . $product->image) }}" alt="{{ $product->image }}" class="" style="width: 200px; height: 300px; float:left;"></a>
         @else
-            <img src="{{ asset('/storage/noimages/download-1.png') }}" style="width: 200px; height: 300px;  float:left">
+            <a href="{{ route('product.edit', $product->id) }}"><img src="{{ asset('/storage/noimages/download-1.png') }}" style="width: 200px; height: 300px;  float:left"></a>
         @endif
     </div>
     @endforeach
