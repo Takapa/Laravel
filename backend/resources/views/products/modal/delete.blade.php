@@ -8,8 +8,8 @@
                 <h2 class="modal-title" id="myModalLabel">Delete Product</h2>
             </div>
             <div class="modal-body">
-                <h3>Slurpee</h3>
-                <p>Section: {{ $product->section }}</p>
+                <h3>{{ $product->name }}</h3>
+                <p>Section: {{ $product->section->name }}</p>
                 <p>Price: {{ $product->price }}</p>
                 <p>Desctioption: {{ $product->description }}</p>
             </div>
